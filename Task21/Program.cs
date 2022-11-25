@@ -25,8 +25,6 @@ double Length(int xa, int ya, int za, int xb, int yb, int zb)
     return Math.Sqrt((xb - xa) * (xb - xa) + (yb - ya) * (yb - ya) 
     + (zb - za) * (zb - za));
 }
- //   return Math.Sqrt((xb - xa) * (xb - xa) + (yb - ya) * (yb - ya) + (zb - za) * (zb - za));
-
 double result = Length(x1, y1, z1, x2, y2, z2);
 double res = Math.Round(result, 2, MidpointRounding.ToZero);
 Console.WriteLine($"Расстояние между заданными точками -> {res}");
